@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>About</title>{% endblock title %}
+
+{% block content %}
+<br>
+<div class="container emp-profile">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <img src="{{url_for('static', filename='images/sumet.jpg')}}" alt="sumet" height="200" width="200" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="profile-head">
+                            <h5>
+                                Sumet Jutajan
+                            </h5>
+                            <h6>
+                                Financial Engineering and FullStack Developer
+                            </h6>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-work">
+                    <p>WORK LINK</p>
+                    <a href="https://www.youtube.com/channel/UCYKFeURR8PvRHqwGQqALdOQ?view_as=subscriber">My Youtube</a><br/>
+                    <a href="https://www.facebook.com/RomanTikz123">My Facebook</a><br/>
+                    <p>SKILLS</p>
+                    <a href="">Financial Analyst</a><br/>
+                    <a href="">Data Analyst</a><br/>
+                    <a href="">Data Management</a><br/>
+                    <a href="">Machine Learning</a><br/>
+                    <a href="">Fullstack Development</a><br/>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>User Id</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>RomanTik</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Name</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Sumet Jutajan</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>sumet.jutha@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Phone</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>099 283 9335</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Profession</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Financial Engineering and FullStack Developer</p> 
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Experience</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>1 years</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Last Salary</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>13,500 thB</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Total Projects</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>English Level</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Good</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Education Background</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Master of Science and Technology (Financial Engineering) 2019-Expected 2021</p>
+                                    </div>
+                                </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Work Experience</label><br/>
+                                <p>Research Assistant Sep. 2019-Present</p><br>
+                                <p>• Input data on children’s household profile in a research project.<br>
+                                    • Clean up and manage data using Stata and Excel.<br>
+                                    • Manage the operation of team members to collect data at Samutsakorn.<br>
+                                    • Assist Full Stack Developer with developing a website using Nuxt.js and Node.js.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>           
+</div>
+{% endblock content %}

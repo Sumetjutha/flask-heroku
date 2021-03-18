@@ -1,0 +1,14 @@
+{
+    "Confirmed": 3878,
+    "Recovered": 3724,
+    "Hospitalized": 94,
+    "Deaths": 60,
+    "NewConfirmed": 3,
+    "NewRecovered": 3,
+    "NewHospitalized": 0,
+    "NewDeaths": 0,
+    "UpdateDate": "17/11/2020 15:47",
+    "Source": "https://covid19.th-stat.com/",
+    "DevBy": "https://www.kidkarnmai.com/",
+    "SeverBy": "https://smilehost.asia/"
+}

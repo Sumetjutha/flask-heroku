@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Home</title>{% endblock title %}
+
+{% block content %}
+    <div class="main" style="text-align: center;">
+        <h1>Welcome to homepage</h1>
+        {% for i in people %}
+        <p>Username is: {{i.username}}</p>
+        <p>Email is: {{i.email}}</p>
+        <a class="btn btn-primary" href="/post-details/{{i.id}}" role="button">See More</a>
+        {% endfor %}
+    </div>
+{% endblock content %}

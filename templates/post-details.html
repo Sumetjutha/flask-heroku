@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Post Details</title>{% endblock title %}
+
+{% block content %}
+    <div class="main" style="text-align: center;">
+        {% if person %}
+        <p>Username is: {{person.username}}</p>
+        <p>Password is: {{person.password}}</p>
+        <p>Email is: {{person.email}}</p>
+        {% endif %}
+    </div>
+{% endblock content %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Covid Table</title>{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <br>
+        <h5 style="text-align: center;">Covid-19 Table</h5>   
+        <!-- table from bootstrap-->
+        <table class="table table-bordered">
+            <thead>
+              <tr style="text-align: center;">
+                <th scope="col">Keys</th>
+                <th scope="col">Values</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for k,v in covid_data.items() %}
+              <tr  style="text-align: center;color: blue">
+                <td>{{k}}</td>
+                <td>{{v}}</td>
+              </tr>
+            </tbody>
+            {% endfor %}
+          </table>
+          <p>ข้อมูลจาก
+              <a href="https://covid19.th-stat.com/th/api">
+                กรมควบคุมโรค กระทรวงสาธารณสุข
+              </a>
+          </p>
+    </div>
+    <br>
+{% endblock content %}
